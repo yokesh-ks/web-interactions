@@ -4,6 +4,21 @@
     "packages/*"
   ],
   "scripts": {
-    "sliderswipe:dev": "yarn workspace slider-swipe dev"
+    "sliderswipe:dev": "yarn workspace slider-swipe dev",
+    "commit": "git-cz"
+  },
+  "dependencies": {
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
