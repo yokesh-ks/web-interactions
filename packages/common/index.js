@@ -1,3 +1,1 @@
-module.exports = () => {
-    console.log('Hello World');
-}
+export * from "./components/Button";

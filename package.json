@@ -5,7 +5,10 @@
   ],
   "scripts": {
     "sliderswipe:dev": "yarn workspace slider-swipe dev",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "storybook": "yarn workspace @webinteractions/common storybook",
+    "build-storybook": "yarn workspace @webinteractions/common build-storybook",
+    "build-common-lib": "yarn workspace @webinteractions/common build-lib"
   },
   "dependencies": {
     "commitizen": "^4.2.5",
