@@ -1,12 +1,23 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 
-export const Button = () => {
+export const Button = ({ label = "button", size = "md", handleClick }) => {
+  let scale = 1;
+  if (size === "sm") scale = 0.75;
+  if (size === "lg") scale = 1.5;
   return (
-    <ButtonStyle>
-      <span>Button</span>
+    <ButtonStyle onClick={handleClick} scale={scale}>
+      {label}
     </ButtonStyle>
   );
+};
+
+Button.propTypes = {
+  label: PropTypes.string,
+  // backgroundColor: PropTypes.string,
+  size: PropTypes.oneOf(["sm", "md", "lg"]),
+  handleClick: PropTypes.func,
 };
 
 const ButtonStyle = styled.button`
@@ -22,7 +33,8 @@ const ButtonStyle = styled.button`
     #ff416c
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: none;
-  padding: 10px 30px;
+  padding: ${({ scale }) =>
+    scale ? `${scale * 0.5}rem ${scale * 1}rem` : `10px 20px`};
   border-radius: 8px;
   box-shadow: 2px 2px 39px 0px rgba(255, 65, 108, 0.55);
   -webkit-box-shadow: 2px 2px 39px 0px rgba(255, 65, 108, 0.55);
