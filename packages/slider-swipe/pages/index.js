@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Container } from "../styles/layoutStyle";
+import { Data } from "../data";
 import Caurosel from "../components/caurosel";
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
             overflow: "scroll",
           }}
         >
-          <Caurosel />
+          <Caurosel data={Data} />
         </div>
       </Container>
     </div>
