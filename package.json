@@ -4,11 +4,10 @@
     "packages/*"
   ],
   "scripts": {
-    "sliderswipe:dev": "yarn workspace slider-swipe dev",
+    "dev": "yarn workspace project dev",
     "commit": "git-cz",
-    "storybook": "yarn workspace @webinteractions/common storybook",
-    "build-storybook": "yarn workspace @webinteractions/common build-storybook",
-    "build-common-lib": "yarn workspace @webinteractions/common build-lib"
+    "storybook": "yarn workspace @webinteractions/components storybook",
+    "build-components-lib": "yarn workspace @webinteractions/components build-lib"
   },
   "dependencies": {
     "commitizen": "^4.2.5",

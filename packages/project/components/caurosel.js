@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { LeftArrow } from "../Icons/leftArrow";
 import { RightArrow } from "../Icons/rightArrow";
-import { Button } from "@webinteractions/common";
+import { Button } from "@webinteractions/components";
 
 function Caurosel(props) {
   const { data } = props;
