@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "yarn workspace project build",
     "dev": "yarn workspace project dev",
     "commit": "git-cz",
     "storybook": "yarn workspace @webinteractions/components storybook",
