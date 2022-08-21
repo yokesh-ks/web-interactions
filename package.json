@@ -4,12 +4,15 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspace project build",
+    "web-build": "yarn workspace project build",
     "dev": "yarn workspace project dev",
     "commit": "git-cz",
     "storybook": "yarn workspace @webinteractions/components storybook",
     "build-storybook": "yarn workspace @webinteractions/components build-storybook",
-    "build-components-lib": "yarn workspace @webinteractions/components build-lib"
+    "build-components-lib": "yarn workspace @webinteractions/components build-lib",
+    "build-icons-lib": "yarn workspace @webinteractions/icons build-lib",
+    "start": "yarn dev & yarn storybook",
+    "build": "yarn build-components-lib & yarn build-icons-lib"
   },
   "dependencies": {
     "commitizen": "^4.2.5",

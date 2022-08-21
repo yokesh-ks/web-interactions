@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { LeftArrow } from "../Icons/leftArrow";
-import { RightArrow } from "../Icons/rightArrow";
+import { LeftArrow, RightArrow } from "@webinteractions/icons";
 import { Button } from "@webinteractions/components";
 
 function Caurosel(props) {
@@ -27,8 +26,24 @@ function Caurosel(props) {
   return (
     <MainContaniner image={data[currentSlideIndex].image}>
       <p>{data[currentSlideIndex].mainTitle}</p>
-      <LeftArrow onClick={handlePreviousState} />
-      <RightArrow onClick={handleNextState} />
+      <LeftArrow
+        onClick={handlePreviousState}
+        fontSize={40}
+        style={{
+          position: "absolute",
+          left: "0",
+          top: "50%",
+        }}
+      />
+      <RightArrow
+        onClick={handleNextState}
+        fontSize={40}
+        style={{
+          position: "absolute",
+          right: "0",
+          top: "50%",
+        }}
+      />
       <Image
         src={data[currentSlideIndex].image}
         alt={data[currentSlideIndex].mainTitle}
