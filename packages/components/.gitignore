@@ -9,6 +9,6 @@ src
 dist
 
 .storybook
-
+.cache/
 
 

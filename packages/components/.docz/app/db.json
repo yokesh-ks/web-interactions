@@ -1,0 +1,93 @@
+{
+  "config": {
+    "title": "Web Design System",
+    "description": "My awesome app using docz",
+    "menu": [],
+    "version": "1.0.0",
+    "repository": null,
+    "native": false,
+    "themeConfig": {},
+    "separator": "-"
+  },
+  "entries": [
+    {
+      "key": "button.mdx",
+      "value": {
+        "name": "Button",
+        "route": "/",
+        "menu": "Components",
+        "id": "917826ec4be6a36e6d549e124174643d",
+        "filepath": "button.mdx",
+        "fullpath": "/Users/yokeshks/Downloads/projects/web-interactions/packages/components/button.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "button",
+        "headings": [
+          {
+            "slug": "button",
+            "depth": 1,
+            "value": "Button"
+          }
+        ]
+      }
+    }
+  ],
+  "props": [
+    {
+      "key": "src/Button/Button.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Button",
+          "methods": [],
+          "actualName": "Button",
+          "props": {
+            "label": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "\"button\"",
+                "computed": false
+              }
+            },
+            "size": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"sm\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"md\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"lg\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "\"md\"",
+                "computed": false
+              }
+            },
+            "handleClick": {
+              "type": {
+                "name": "func"
+              },
+              "required": false,
+              "description": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
