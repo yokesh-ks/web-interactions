@@ -19,7 +19,7 @@ const config = {
   pathPrefix: '/',
 
   siteMetadata: {
-    title: 'Components',
+    title: 'Web Design System',
     description: 'My awesome app using docz',
   },
   plugins: [
@@ -59,10 +59,10 @@ const config = {
         eb: 'master',
         'edit-branch': 'master',
         config: '',
-        title: 'Components',
+        title: 'Web Design System',
         description: 'My awesome app using docz',
         host: 'localhost',
-        port: 3000,
+        port: 3001,
         p: 3000,
         separator: '-',
         paths: {

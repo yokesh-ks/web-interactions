@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-lib": "rollup -c"
+    "build-lib": "rollup -c",
+    "dev": "docz dev",
+    "build": "docz build"
   },
   "dependencies": {
     "@emotion/core": "^10.1.0",
