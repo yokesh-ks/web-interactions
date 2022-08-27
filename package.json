@@ -12,7 +12,8 @@
     "build-components-lib": "yarn workspace @webinteractions/components build-lib",
     "build-icons-lib": "yarn workspace @webinteractions/icons build-lib",
     "start": "yarn dev & yarn storybook",
-    "build": "yarn build-components-lib & yarn build-icons-lib"
+    "build": "yarn build-components-lib & yarn build-icons-lib",
+    "build:docz": "yarn workspace @webinteractions/components build"
   },
   "dependencies": {
     "commitizen": "^4.2.5",
